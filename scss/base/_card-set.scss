@@ -1,0 +1,16 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+  @include mq(tab) {
+    --card-item: 2;
+  }
+  @include mq(desk) {
+    --card-item: 3;
+  }
+}
+
+.card-item {
+  /* flex-basis: calc((100% - (3 - 1) * 30px) / 3); */
+  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
+}

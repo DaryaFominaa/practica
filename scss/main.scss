@@ -1,0 +1,46 @@
+
+// utils styles-Палітра кольорів і набори шрифтів винесені у змінні
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/reset';
+@import './utils/mixin';
+
+// base styles- включает глобальные стили, такие как сброс стилей, типография, цвета и т.д.
+
+
+@import './base/base';
+@import './base/section';
+@import './base/container';
+@import './base/card-set';
+
+// components styles- отдельные части страницы (Лого, хеддер, футер)
+
+@import './components/title';
+@import './components/nav';
+@import './components/logo';
+@import './components/button';
+@import './components/contacts';
+@import './components/social';
+@import './components/form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/checkbox';
+@import './components/mobile_menu';
+
+
+
+// layout styles- хедер, футер, навигация и т.д.
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/examples';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/filter';
+@import './layout/portolio';
+

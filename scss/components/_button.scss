@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    text-align: center;
+
+    font-family: inherit;
+    @include fonts (16px, 30px, 700, 0.06em);
+    cursor: pointer;
+
+    border: transparent;
+    border-radius: 4px;
+    color: var(--button-color);
+    background-color: var(--accent-color);
+
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+    background-color: var(--button-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &--submit {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 52px;
+    padding-left: 52px;
+    }
+}

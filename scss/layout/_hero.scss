@@ -1,0 +1,78 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @include mq(desk) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  background-color: var(--hero-bcr-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq(mob-only) {
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+      url('../images/hero/Header\ img@1x_sm.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+        url('../images/hero/Header\ img@2x_sm.jpg');
+    }
+  }
+  @include mq(tab) {
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+      url('../images/hero/Header\ img@1x_md.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+        url('../images/hero/Header\ img@2x_md.jpg');
+    }
+  }
+  @include mq(desk) {
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+      url('../images/hero/Header\ img@1x_md.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)),
+        url('../images/hero/Header\ img@2x_md.jpg');
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include fonts(26px, 42px, 900, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--button-color);
+
+    max-width: 360px;
+    margin-bottom: 30px;
+
+    @include mq(desk) {
+      max-width: 700px;
+      @include fonts(44px, 60px, 900, 0.06em);
+    }
+  }
+
+  &__button {
+    padding: 10px 24px;
+
+    @include mq(desk) {
+      padding: 10px 32px;
+    }
+  }
+}

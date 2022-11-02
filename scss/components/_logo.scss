@@ -1,0 +1,21 @@
+.logo {
+    font-family: Raleway, cursive;
+    @include fonts (26px, 31px, 700, 0.03em);
+    color: var(--logo-title-color);
+    text-decoration: none;
+
+@include mq(mob-only){
+        padding-bottom: 16px;
+            padding-top: 16px;
+
+        }
+@include mq(tab) {
+    margin-right: auto;
+}
+
+@include mq(desk) {
+    margin-right: 93px;
+
+}
+
+}

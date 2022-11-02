@@ -1,0 +1,13 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    background-color: var(--button-color);
+    color: var(--primary-text-color);
+}
+
+body.modal-open {
+overflow: hidden;
+}

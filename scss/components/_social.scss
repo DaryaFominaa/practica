@@ -1,0 +1,75 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__link {
+  @extend %link-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+
+  background-color: var(--button-color);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  background-size: contain;
+
+  color: var(--icon-fii);
+  transition: color var(--transition), background-color var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-color);
+    color: var(--button-color);
+  }
+  &--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &--footer:hover,
+  &--footer:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  &--footer {
+    fill: var(--button-color);
+  }
+}
+
+.social__title--footer {
+  @include fonts(14px, 16px, 700);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: var(--button-color);
+
+  @include mq(desk) {
+    text-align: left;
+  }
+}
+
+.social--footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  @include mq(desk) {
+    justify-content: center;
+  }
+}
